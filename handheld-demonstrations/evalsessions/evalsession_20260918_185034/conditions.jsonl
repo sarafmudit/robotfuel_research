@@ -1,0 +1,2 @@
+{"record": "session", "model": "r50", "checkpoint": "/Users/muditsaraf/Documents/workspace/lerobot-official-v0.6.1/outputs/train/act_wrist_v1_4090/last/pretrained_model", "plan": "eval_placement_plan_v1.json", "episode_s": 35.0}
+{"record": "attempt", "attempt": 1, "model": "r50", "x_cm": 1.5, "y_cm": 17.0, "cell": [3, 0], "group": "corner", "brightness": 33.8, "in_band": false, "operator_verdict": "skipped_lighting"}

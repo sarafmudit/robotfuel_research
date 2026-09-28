@@ -1,0 +1,23 @@
+{"attempt": 1, "brightness": 88.7, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 2, "brightness": 100.9, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 3, "brightness": 107.4, "inband": false, "source": "backfilled_from_transcript", "note": "interrupted by keystroke"}
+{"attempt": 4, "brightness": 113.6, "inband": false, "source": "backfilled_from_transcript"}
+{"attempt": 5, "brightness": 109.4, "inband": false, "source": "backfilled_from_transcript"}
+{"attempt": 6, "brightness": 100.8, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 7, "brightness": 86.0, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 8, "brightness": 88.4, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 9, "brightness": 103.8, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 10, "brightness": 105.2, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 11, "brightness": 92.3, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 12, "brightness": 108.3, "inband": false, "source": "backfilled_from_transcript"}
+{"attempt": 13, "brightness": 91.9, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 14, "brightness": 100.0, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 15, "brightness": 110.5, "inband": false, "source": "backfilled_from_transcript", "note": "motor input voltage error, no data"}
+{"attempt": 16, "brightness": 111.1, "inband": false, "source": "backfilled_from_transcript"}
+{"attempt": 17, "brightness": 84.5, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 18, "brightness": 99.2, "inband": true, "source": "backfilled_from_transcript", "note": "first run interrupted by keystroke; this is the redo (99.5 -> 99.2)"}
+{"attempt": 19, "brightness": 102.2, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 20, "brightness": 91.9, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 21, "brightness": 86.2, "inband": true, "source": "backfilled_from_transcript"}
+{"attempt": 22, "brightness": 80.7, "inband": false, "source": "backfilled_from_transcript"}
+{"attempt": 23, "brightness": 99.2, "inband": true, "source": "backfilled_from_transcript"}

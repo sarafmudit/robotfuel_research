@@ -1,0 +1,4 @@
+{"record": "session", "models": ["r50"], "design": "single model", "plan": "eval_placement_plan_centre4.json", "episode_s": 35.0}
+{"record": "attempt", "attempt": 1, "placement": 1, "model": "r50", "x_cm": 6.5, "y_cm": 7.0, "cell": [1, 1], "group": "interior", "square": 6, "brightness": 155.4, "in_band": false, "operator_verdict": "skipped_lighting", "note": null}
+{"record": "attempt", "attempt": 2, "placement": 2, "model": "r50", "x_cm": 11.5, "y_cm": 7.0, "cell": [1, 2], "group": "interior", "square": 7, "brightness": 140.1, "in_band": false, "operator_verdict": "skipped_lighting", "note": null}
+{"record": "attempt", "attempt": 3, "placement": 3, "model": "r50", "x_cm": 6.5, "y_cm": 12.0, "cell": [2, 1], "group": "interior", "square": 10, "brightness": 93.5, "in_band": true, "operator_verdict": "fail_no_grasp", "note": null}

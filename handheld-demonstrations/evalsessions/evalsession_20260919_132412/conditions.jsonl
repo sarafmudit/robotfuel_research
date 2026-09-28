@@ -1,0 +1,1 @@
+{"record": "session", "models": ["r50"], "design": "single model", "plan": "eval_placement_plan_centre4.json", "episode_s": 35.0}

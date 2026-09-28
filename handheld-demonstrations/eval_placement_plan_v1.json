@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "purpose": "Fixed evaluation placements. The SAME list, in the SAME order, is used for every policy so models can be compared attempt-by-attempt (paired), not just by overall rate.",
+  "zone_cm": 20.0,
+  "grid": 4,
+  "coordinate_frame": "Viewed from behind the follower: near-left inside corner is (0,0), +x right, +y away. Coordinates are box-footprint centres.",
+  "measurement_resolution_cm": 0.5,
+  "design": "16 cells x 1 interior point never used in training, plus a 2nd point in each of the 4 corner cells to double the sample where failures are suspected. All 20 points are unique, avoid the 5 cm grid lines, and lie inside the trained envelope x 1.5-18.5, y 2.0-18.0.",
+  "operator_verdict_required": true,
+  "verdict_values": [
+    "clean_success",
+    "recovered_success",
+    "fail_no_grasp",
+    "fail_never_closed",
+    "fail_dropped",
+    "void",
+    "skipped_operator",
+    "skipped_lighting",
+    "void_interrupted"
+  ],
+  "note": "gripper width alone cannot separate a clean grasp from a lucky re-grab or a flat/side pickup. The operator verdict is ground truth; the automatic score is a proxy checked against it.",
+  "placements": [
+    {
+      "attempt": 1,
+      "cell": [
+        3,
+        0
+      ],
+      "x_cm": 1.5,
+      "y_cm": 17.0,
+      "group": "corner"
+    },
+    {
+      "attempt": 2,
+      "cell": [
+        0,
+        1
+      ],
+      "x_cm": 6.5,
+      "y_cm": 2.0,
+      "group": "edge"
+    },
+    {
+      "attempt": 3,
+      "cell": [
+        0,
+        3
+      ],
+      "x_cm": 16.5,
+      "y_cm": 2.0,
+      "group": "corner"
+    },
+    {
+      "attempt": 4,
+      "cell": [
+        3,
+        2
+      ],
+      "x_cm": 11.5,
+      "y_cm": 17.0,
+      "group": "edge"
+    },
+    {
+      "attempt": 5,
+      "cell": [
+        1,
+        1
+      ],
+      "x_cm": 6.5,
+      "y_cm": 7.0,
+      "group": "interior"
+    },
+    {
+      "attempt": 6,
+      "cell": [
+        3,
+        3
+      ],
+      "x_cm": 16.5,
+      "y_cm": 18.0,
+      "group": "corner"
+    },
+    {
+      "attempt": 7,
+      "cell": [
+        1,
+        3
+      ],
+      "x_cm": 16.5,
+      "y_cm": 7.0,
+      "group": "edge"
+    },
+    {
+      "attempt": 8,
+      "cell": [
+        0,
+        0
+      ],
+      "x_cm": 1.5,
+      "y_cm": 2.0,
+      "group": "corner"
+    },
+    {
+      "attempt": 9,
+      "cell": [
+        2,
+        0
+      ],
+      "x_cm": 1.5,
+      "y_cm": 12.0,
+      "group": "edge"
+    },
+    {
+      "attempt": 10,
+      "cell": [
+        2,
+        2
+      ],
+      "x_cm": 11.5,
+      "y_cm": 12.0,
+      "group": "interior"
+    },
+    {
+      "attempt": 11,
+      "cell": [
+        3,
+        3
+      ],
+      "x_cm": 16.5,
+      "y_cm": 17.0,
+      "group": "corner"
+    },
+    {
+      "attempt": 12,
+      "cell": [
+        0,
+        2
+      ],
+      "x_cm": 11.5,
+      "y_cm": 2.0,
+      "group": "edge"
+    },
+    {
+      "attempt": 13,
+      "cell": [
+        0,
+        0
+      ],
+      "x_cm": 1.5,
+      "y_cm": 3.0,
+      "group": "corner"
+    },
+    {
+      "attempt": 14,
+      "cell": [
+        1,
+        0
+      ],
+      "x_cm": 1.5,
+      "y_cm": 7.0,
+      "group": "edge"
+    },
+    {
+      "attempt": 15,
+      "cell": [
+        1,
+        2
+      ],
+      "x_cm": 11.5,
+      "y_cm": 7.0,
+      "group": "interior"
+    },
+    {
+      "attempt": 16,
+      "cell": [
+        0,
+        3
+      ],
+      "x_cm": 16.5,
+      "y_cm": 3.0,
+      "group": "corner"
+    },
+    {
+      "attempt": 17,
+      "cell": [
+        2,
+        3
+      ],
+      "x_cm": 16.5,
+      "y_cm": 12.0,
+      "group": "edge"
+    },
+    {
+      "attempt": 18,
+      "cell": [
+        3,
+        0
+      ],
+      "x_cm": 1.5,
+      "y_cm": 18.0,
+      "group": "corner"
+    },
+    {
+      "attempt": 19,
+      "cell": [
+        3,
+        1
+      ],
+      "x_cm": 6.5,
+      "y_cm": 17.0,
+      "group": "edge"
+    },
+    {
+      "attempt": 20,
+      "cell": [
+        2,
+        1
+      ],
+      "x_cm": 6.5,
+      "y_cm": 12.0,
+      "group": "interior"
+    }
+  ],
+  "ordering": "Stratified interleave, 2 corner : 2 edge : 1 interior per block of five, spatially spread within each group. Raster order was rejected: a session cut short would have sampled only the near edge, and models evaluated for different numbers of attempts would not have been comparable. Here every prefix of 5, 10, 15 or 20 holds the group proportions exactly, so a partial session is still a fair sample of the workspace."
+}

@@ -1,0 +1,3 @@
+{"record": "session", "models": ["r16", "r50"], "design": "paired: every model runs on each placement before the box moves, so lighting drift and placement luck are shared", "plan": "eval_placement_plan_v1.json", "episode_s": 35.0}
+{"record": "attempt", "attempt": 1, "placement": 1, "model": "r16", "x_cm": 1.5, "y_cm": 17.0, "cell": [3, 0], "group": "corner", "brightness": 75.4, "in_band": false, "operator_verdict": "skipped_lighting", "note": null}
+{"record": "attempt", "attempt": 2, "placement": 1, "model": "r50", "x_cm": 1.5, "y_cm": 17.0, "cell": [3, 0], "group": "corner", "brightness": 79.0, "in_band": false, "operator_verdict": "skipped_lighting", "note": null}
