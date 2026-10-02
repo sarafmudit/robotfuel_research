@@ -10,6 +10,10 @@ them into the robot's joint space.
 tenths of what a second robot teleoperation session bought — on fewer training
 frames, and with no robot tied up to collect them.
 
+📄 **Writeup, with the charts and the failure cases:**
+<https://robotfuel.fly.dev/research/handheld-demonstrations.html>
+🤗 **Models and datasets:** <https://huggingface.co/robotfuel>
+
 ## The question, stated precisely
 
 > **16 teleoperated demonstrations + 16 converted from handheld video

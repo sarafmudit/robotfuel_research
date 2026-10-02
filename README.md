@@ -19,6 +19,19 @@ exits non-zero if any quoted rate stops reproducing.
 Trained checkpoints and datasets are on HuggingFace under
 [`robotfuel`](https://huggingface.co/robotfuel), linked from each study.
 
+| | |
+|---|---|
+| [`act_so101_t16b_u16`](https://huggingface.co/robotfuel/act_so101_t16b_u16) | 16 teleop + 16 handheld — **the result** |
+| [`act_so101_t16b`](https://huggingface.co/robotfuel/act_so101_t16b) | 16 teleop, the baseline |
+| [`act_so101_t16b_t16`](https://huggingface.co/robotfuel/act_so101_t16b_t16) | 32 teleop, the matched-count control |
+
+## Writeup
+
+The handheld study is written up with the charts, the method and the failure
+cases at
+**<https://robotfuel.fly.dev/research/handheld-demonstrations.html>**.
+This repository is the evidence behind that page.
+
 ## How to read these
 
 Three conventions apply across every study here.
